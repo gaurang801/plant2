@@ -96,16 +96,47 @@
     .keyfont {
       font-size: 1.5rem;
       font-weight: bold;
+      margin: 20px 0 10px 0;
+      display: block;
     }
 
+    /* Features + Care Section */
+    .feature {
+      margin-bottom: 15px;
+    }
+
+    .feature b {
+      display: block;
+      font-size: 1.05rem;
+      margin-bottom: 5px;
+      color: #ffd166;
+    }
+
+    .feature span {
+      display: block;
+      margin-left: 10px;
+      font-size: 0.95rem;
+    }
+
+    /* View More Button */
     .wiki {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 18px;
+      background: linear-gradient(45deg, #00c6ff, #0072ff);
       color: white;
       font-size: 1rem;
-      text-decoration: underline;
+      font-weight: 600;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
 
-    #element {
-      color: yellow;
+    .wiki:hover {
+      background: linear-gradient(45deg, #0072ff, #00c6ff);
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
     }
 
     #key {
@@ -183,11 +214,11 @@
         <span class="purple">Dracaena Massangeana</span>
         <span id="element"></span>
         <div id="about">
-          <p><b>Scientific Name:</b> Dracaena fragrans 'Massangeana' <br>
-            
-            <b>Family:</b> Asparagaceae <br>
-            <b>Type:</b> Evergreen Shrub <br>
-            <b>Origin:</b> Tropical Africa <br> </p>
+          <p><b>Scientific Name:</b> Dypsis lutescens</p>
+          <p><b>Common Names:</b> Areca Palm, Butterfly Palm, Golden Cane Palm</p>
+          <p><b>Family:</b> Arecaceae</p>
+          <p><b>Type:</b> Evergreen Palm</p>
+          <p><b>Origin:</b> Madagascar</p>
         </div>
       </div>
       <div class="rightsection">
@@ -199,39 +230,66 @@
 
     <section id="key">
       <b class="keyfont">Key Features</b>
-      <p>
-        <b>🌿 Leaves:</b> Long, arching, sword-shaped leaves with a central yellow-green stripe, glossy and leathery.<br>
-        <b>📏 Height:</b> Grows up to 4–6 feet indoors; can reach 15 feet outdoors in tropical climates.<br>
-        <b>☀️ Light Requirement:</b> Prefers bright indirect sunlight. Can tolerate low light but grows best in filtered light. Avoid harsh direct sun.<br>
-        <b>💧 Watering:</b> Water moderately. Allow the top 1–2 inches of soil to dry before watering again. Overwatering may cause root rot.<br>
-        <b>🌱 Soil:</b> Well-draining potting mix with loam, peat, and perlite/sand.<br>
-        <b>🌡️ Temperature:</b> Prefers 18°C to 27°C. Sensitive to cold drafts below 15°C.<br>
-        <b>💦 Humidity:</b> Average household humidity is fine, but it prefers moderate to high humidity. Mist leaves occasionally.<br>
-      </p>
+
+      <div class="feature">
+        <b>🌿 Leaves:</b>
+        <span>Long, arching, sword-shaped leaves with a central yellow-green stripe, glossy and leathery.</span>
+      </div>
+
+      <div class="feature">
+        <b>📏 Height:</b>
+        <span>Grows up to 4–6 feet indoors; can reach 15 feet outdoors in tropical climates.</span>
+      </div>
+
+      <div class="feature">
+        <b>☀️ Light Requirement:</b>
+        <span>Prefers bright indirect sunlight. Can tolerate low light but grows best in filtered light. Avoid harsh direct sun.</span>
+      </div>
+
+      <div class="feature">
+        <b>💧 Watering:</b>
+        <span>Water moderately. Allow the top 1–2 inches of soil to dry before watering again. Overwatering may cause root rot.</span>
+      </div>
+
+      <div class="feature">
+        <b>🌱 Soil:</b>
+        <span>Well-draining potting mix with loam, peat, and perlite/sand.</span>
+      </div>
+
+      <div class="feature">
+        <b>🌡️ Temperature:</b>
+        <span>Prefers 18°C to 27°C. Sensitive to cold drafts below 15°C.</span>
+      </div>
+
+      <div class="feature">
+        <b>💦 Humidity:</b>
+        <span>Average household humidity is fine, but it prefers moderate to high humidity. Mist leaves occasionally.</span>
+      </div>
 
       <b class="keyfont">🌱 Care Tips</b>
-      <p>
-        ✔️ Do not overwater; root rot is common.<br>
-        ✔️ Wipe leaves regularly to keep them dust-free and shiny.<br>
-        ✔️ Rotate the pot occasionally for even growth.<br>
-        ✔️ Fertilize once a month during growing season (spring/summer) with a balanced liquid fertilizer.<br>
-        ✔️ Repot every 2–3 years when roots outgrow the container.<br>
-        ⚠️ Mildly toxic if ingested by pets (cats/dogs) – may cause vomiting or drooling.<br>
-      </p>
+
+      <div class="feature">
+        <span>✔️ Do not overwater; root rot is common.</span>
+      </div>
+      <div class="feature">
+        <span>✔️ Wipe leaves regularly to keep them dust-free and shiny.</span>
+      </div>
+      <div class="feature">
+        <span>✔️ Rotate the pot occasionally for even growth.</span>
+      </div>
+      <div class="feature">
+        <span>✔️ Fertilize once a month during growing season (spring/summer) with a balanced liquid fertilizer.</span>
+      </div>
+      <div class="feature">
+        <span>✔️ Repot every 2–3 years when roots outgrow the container.</span>
+      </div>
+      <div class="feature">
+        <span>⚠️ Mildly toxic if ingested by pets (cats/dogs) – may cause vomiting or drooling.</span>
+      </div>
 
       <a class="wiki" href="https://en.wikipedia.org/wiki/Dracaena_fragrans" target="_blank">View More</a>
     </section>
   </main>
-
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <!-- <script>
-    var typed = new Typed('#element', {
-      strings: ['Also Known as Corn Plant', '🌿 Beautiful Indoor Plant'],
-      typeSpeed: 50,
-      backSpeed: 40,
-      loop: true
-    });
-  </script> -->
 
 </body>
 </html>
